@@ -273,6 +273,7 @@ public class ImagePickerDelegate
 
   private void launchTakeVideoWithCameraIntent() {
     Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+    intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, 60);
     boolean canTakePhotos = intentResolver.resolveActivity(intent);
 
     if (!canTakePhotos) {

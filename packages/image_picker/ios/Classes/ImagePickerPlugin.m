@@ -87,6 +87,7 @@ static const int SOURCE_GALLERY = 1;
       (NSString *)kUTTypeMovie, (NSString *)kUTTypeAVIMovie, (NSString *)kUTTypeVideo,
       (NSString *)kUTTypeMPEG4
     ];
+    [_imagePickerController setVideoMaximumDuration:60];
     _imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
 
     self.result = result;
